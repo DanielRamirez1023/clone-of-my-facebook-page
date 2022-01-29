@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    background-color:rgba(128, 128, 128, 0.164);
+}
+
+/* seccion grid se acomodan columnas y filas*/
+.grid{
+    display: grid;  
+    gap: 2px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "barra_inicio barra_inicio"
+    "portada_p portada_p"
+    "informacion otras_personas"
+    "fotos otras_personas"
+    "conectate conectate"
+    ;
+}
+
+.grid .barra_inicio{
+    background-color: white;
+    grid-area: barra_inicio;
+}
+
+.grid .portada_p{
+    background-color: white;
+    grid-area: portada_p;
+    
+}
+
+.grid .informacion{
+    background-color: white;
+    grid-area: informacion;
+}
+
+.grid .otras_personas{
+    background-color: white;
+    grid-area: otras_personas;
+}
+
+.grid .fotos{
+    background-color: white;
+    grid-area: fotos;
+}
+
+
+.grid .conectate{
+    background-color: white;
+    grid-area:conectate;
+}
+
+
+/* final de seccion grid*/
+
+
+/*barra de inicio*/
+
+input{
+    margin: 1px 5px;
+    outline: none;
+    height: 30px;
+    float: right;  
+    padding: 0px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+}
+
+input:hover{
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    
+}
+
+a{
+    float: right;
+    text-decoration: none;
+    margin: 10px 10px;
+    margin-right: 40px;
+    color:#1877F2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    
+}
+
+input[type="button"]:hover{
+    background-color: #115dc0;
+    cursor: pointer;
+}
+
+
+
+.barra_inicio h2{
+    color: #1877F2;
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 10px;
+    
+}
+
+
+div .barra_inicio{
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* final barra de inicio */
+
+div .portada_p{
+    margin-top: 28px;
+}
+
+.fondo_gris{
+    margin: auto;
+    width: 900px;
+    height: 400px;
+    margin-bottom: 72px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+.imagen{
+    position: absolute;
+    text-align: center;
+    margin: 220px 1px 1px 330px;
+}
+
+.imagen img{
+    border-radius: 100px;
+}
+
+ul{
+    width: 55%;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    margin: auto;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;   
+    padding: 15px;
+}
+
+ul li:hover{
+    background-color: rgba(128, 128, 128, 0.164);
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+div .informacion,.fotos{    
+    padding: 2%;
+    margin: 1% 1% 2% 38%;
+    width: 64%;
+    border-radius: 10px;
+
+}
+
+
+div .fotos div{
+    display: inline-block;
+
+}
+
+div .otras_personas{
+    padding: 2%;
+    margin: 1% 10% 10% 8%;
+    width: 50%;
+    border-radius: 10px;
+    
+    
+}
+
+div .otras_personas h3,.item,button{
+    margin-left: 20px;
+}
+
+
+.otras_personas .item:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.otras_personas button:hover{
+background-color: rgba(0, 0, 0, 0.164);
+cursor: pointer;
+}
+
+div .informacion h3{ 
+    margin: 14px;
+}
+
+.informacion .empleo,.universidad,.secundaria{
+    margin: 20px;
+}
+
+div .conectate{
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.fotos div img{
+    width: 135px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.fotos div img:hover{
+    cursor: pointer;
+}
+
+.fotos .sub_image{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fotos h3{
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+.otras_personas .item #log{
+    border-radius:  40px;
+}
+
+.otras_personas .item #log,h5{
+    display: inline-block;
+}
+
+.item{
+    margin: 20px;
+    padding: 5px;
+}
+
+.otras_personas button{
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.otras_personas .title_b{
+    margin: 20px 1px 10px 17px;
+}
+
+.conectate{
+    text-align: center;
+}
+
+.conectate  button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.blue{
+    background-color: #1877F2;
+    color: white;
+}
+
+.blue:hover{
+    background-color: #115dc0;
+}
+.green{
+    background-color: #00A400;
+    color: white;
+}
+
+.green:hover{
+    background-color: #099109;
+}
+.fotos h4{
+    display: inline-block;
+    margin-left: 210px;
+    color: #1877F2;
+    padding: 10px;
+}
+.fotos h4:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
+    cursor: pointer;
+}
